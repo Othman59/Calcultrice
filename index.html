@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+  </head>
+  <body>
+	<div class="style">
+    <div>
+      <input type="text" id="resultat" />
+    </div>
+    <table>
+      <tr>
+        <td><button onclick="ajouterChiffre('7')">7</button></td>
+        <td><button onclick="ajouterChiffre('8')">8</button></td>
+        <td><button onclick="ajouterChiffre('9')">9</button></td>
+        <td><button onclick="ajouterOperateur('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="ajouterChiffre('4')">4</button></td>
+        <td><button onclick="ajouterChiffre('5')">5</button></td>
+        <td><button onclick="ajouterChiffre('6')">6</button></td>
+        <td><button onclick="ajouterOperateur('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="ajouterChiffre('1')">1</button></td>
+        <td><button onclick="ajouterChiffre('2')">2</button></td>
+        <td><button onclick="ajouterChiffre('3')">3</button></td>
+        <td><button onclick="ajouterOperateur('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="ajouterChiffre('0')">0</button></td>
+        <td><button onclick="ajouterChiffre('.')">.</button></td>
+        <td><button onclick="effacer()">C</button></td>
+        <td><button onclick="ajouterOperateur('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button class="egal" onclick="calculer()">=</button></td>
+		<td><button onclick="reset()">Del</button></td>
+      </tr>
+    </table>
+	</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
